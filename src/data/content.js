@@ -8,7 +8,7 @@ export const brand = {
   currency: "NGN",
   locale: "en-NG",
   email: "hello@krystalbakes.com",
-  whatsapp: "https://wa.me/234XXXXXXXXXX", // replace with your number
+  whatsapp: "https://wa.me/2348086825973", // replace with your number
 };
 
 export const nav = [
