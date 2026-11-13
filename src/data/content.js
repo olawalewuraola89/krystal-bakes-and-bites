@@ -7,7 +7,7 @@ export const brand = {
   founded: "2022",
   currency: "NGN",
   locale: "en-NG",
-  email: "hello@krystalbakes.com",
+  email: "olawalewuraola89@gmail.com",
   whatsapp: "https://wa.me/2348086825973", // replace with your number
 };
 
