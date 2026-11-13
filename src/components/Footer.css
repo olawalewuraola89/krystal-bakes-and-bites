@@ -1,0 +1,12 @@
+.footer {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px;
+  padding: 26px var(--pad-x);
+  background: var(--ivory);
+  font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+}
+.footer__logo span { display: block; font-family: var(--font-serif); font-size: 1.6rem; letter-spacing: 0.08em; line-height: 1; }
+.footer__logo small { font-size: 0.52rem; letter-spacing: 0.2em; color: var(--muted); }
+.footer__nav, .footer__social { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; }
+.footer a:hover { color: var(--olive); }
+.footer__note { color: var(--muted); }
+.footer__mail { text-transform: none; letter-spacing: 0.03em; font-size: 0.78rem; }

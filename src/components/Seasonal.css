@@ -1,0 +1,26 @@
+.seasonal {
+  position: relative;
+  min-height: 440px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: var(--pad-y) var(--pad-x);
+  color: #fff;
+  overflow: hidden;
+}
+.seasonal__bg { position: absolute; inset: 0; }
+.seasonal__shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(60,68,40,.82), rgba(60,68,40,.35) 60%, transparent); }
+.seasonal__copy { position: relative; z-index: 2; max-width: 360px; display: flex; flex-direction: column; gap: 16px; align-items: flex-start; }
+.seasonal .eyebrow { color: rgba(255,255,255,.8); }
+.seasonal .h-display { color: #fff; font-size: clamp(2.2rem, 4vw, 3.4rem); text-transform: uppercase; letter-spacing: 0.02em; }
+.seasonal__copy p:not(.eyebrow) { font-family: var(--font-serif); font-size: 1.1rem; line-height: 1.45; }
+.seasonal__script { position: absolute; z-index: 2; left: 38%; top: 28%; transform: rotate(-12deg); color: rgba(255,255,255,.9); font-size: clamp(1.6rem, 2.6vw, 2.4rem); }
+.seasonal__cake { position: relative; z-index: 2; width: min(100%, 480px); aspect-ratio: 1 / 0.9; justify-self: end; background: transparent; }
+.seasonal__cake.is-missing { background: radial-gradient(ellipse at 50% 55%, rgba(255,255,255,.35), transparent 65%); }
+.seasonal__cake img { object-fit: contain; }
+
+@media (max-width: 760px) {
+  .seasonal { grid-template-columns: 1fr; gap: 24px; }
+  .seasonal__script { display: none; }
+  .seasonal__cake { justify-self: center; }
+}
